@@ -22,12 +22,12 @@ class Transfer
       @status = "rejected"
     end
     counter = 0
-    until counter = 1
+    #until counter = 1
     @sender.deposit(-@amount)
     @receiver.deposit(@amount)
     @status = "complete"
     counter =+ 1
-    end
+    #end
   end
 
   def reverse_transfer
