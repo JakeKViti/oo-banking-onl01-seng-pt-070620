@@ -20,7 +20,7 @@ class Transfer
     if valid? == false
       self.status = "rejected"
      return "Transaction rejected. Please check your account balance."
-   elsif  valid?
+   elsif  valid? == true
 
      @sender.deposit(-@amount)
      @receiver.deposit(@amount)
