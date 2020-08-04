@@ -24,7 +24,7 @@ class Transfer
     else
       self.status = "rejected"
      return "Transaction rejected. Please check your account balance."
- 
+
    end
   end
 
