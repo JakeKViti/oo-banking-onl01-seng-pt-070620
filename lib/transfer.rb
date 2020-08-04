@@ -22,7 +22,7 @@ class Transfer
       @status = "rejected"
     end
     counter = 0
-    while counter >= 0
+    until counter = 1
     @sender.deposit(-@amount)
     @receiver.deposit(@amount)
     @status = "complete"
