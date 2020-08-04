@@ -20,7 +20,7 @@ class Transfer
     if valid? == true
       @sender.deposit(-@amount)
       @receiver.deposit(@amount)
-      se.fstatus = "complete"
+      self.status = "complete"
     else
      return "Transaction rejected. Please check your account balance."
      self.status = "rejected"
