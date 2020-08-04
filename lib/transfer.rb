@@ -33,6 +33,7 @@ class Transfer
     @receiver.deposit(-@amount)
     @status = "reversed"
   end
+  end
 
 
 end
