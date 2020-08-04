@@ -18,12 +18,9 @@ class Transfer
 
   def execute_transaction
     if valid? == true
-      counter = 0
-      until counter != 0
       @sender.deposit(-@amount)
       @receiver.deposit(@amount)
       @status = "complete"
-      counter = 1
       end
     end
      return "Transaction rejected. Please check your account balance."
